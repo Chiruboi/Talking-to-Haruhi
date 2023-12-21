@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Wellfleet&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Wellfleet', monospace;
+}
+
+
+.container {
+  background-color: rgba(167, 75, 14, 0.4);
+  min-height: 100%;
+  height: 100vh;
+  padding: 0 20%;
+}
+
+main {
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  border-left: 6px solid rgb(114, 39, 4);
+  border-right: 6px solid rgb(114, 39, 4);
+  outline-offset: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 44px;
+}
+
+.haruhi {
+  min-width: 280px;
+  width: 380px;
+  margin-bottom: 11px;
+  transition: 0.22s ease-in-out;
+  position: relative;
+}
+
+.haruhi img {
+  width: 100%;
+  box-shadow: 0 0 8px rgba(0, 8, 20, 0.4);
+  transition: 0.22s ease-in-out;
+}
+.haruhi img:hover {
+  border-radius: 44px;
+}
+
+.dont-touch {
+  background-color: rgb(2, 160, 223);
+  color: #ffffff;
+  padding: 4px 12px;
+  border-radius: 22px;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  position: absolute;
+  right: -88px;
+  bottom: 44px;
+  display: none;
+}
+
+
+.convo {
+  /* background-color: rgba(26, 120, 219, 0.4); */
+  min-width: 280px;
+  width: 380px;
+  
+}
+
+.convo h1 {
+  background-color: rgb(255, 195, 0);
+  margin-bottom: 11px;
+  padding: 8px 22px;
+  border: 6px outset rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-size: 26px;
+
+}
+
+.convo h1:hover span {
+  color: rgb(223, 9, 2);
+  text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.8);
+}
+
+.convo .you {
+  text-align: center;
+}
+
+.convo .you div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 11px;
+  grid-gap: 11px;
+}
+
+.convo .you button {
+  height: 60px;
+  padding: 6px;
+  font-size: 20px;
+  flex: 1;
+  border-radius: 0;
+  transition: 0.22s ease-in-out;
+}
+.convo .you button:hover {
+  background-color: rgb(2, 160, 223);
+  color: #ffffff;
+
+}
+.convo .you button:active {
+  background-color: rgb(3, 123, 170);
+  color: #ffffffc0;
+  transition: 0.11s ease-in-out;
+}
